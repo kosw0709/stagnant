@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stagnant</title>
+    <link rel="stylesheet" href="style/style.css"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <div id="time">
+            <h2 id="date"></h2>
+        </div>
+        <div id=time>
+            <h1 id="clock"></h1>
+        </div>
+    </div>
+    <div id="weather">
+        <span>서울</span>
+        <span id="temp"></span>
+        <span id="desc"></span>
+    </div>
+    <div id="toDoList">
+        <div class="input">
+            <input type="text", id="input" placeholder="What are you doing today?" onkeypress="if(event.keyCode==13) {clickButton(); return false;}">
+        </div>
+        <div class="list">
+            <ol id="list">
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+
+    
+</body>
+</html>
